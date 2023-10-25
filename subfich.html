@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subida de Ficheros</title>
+</head>
+<body>
+    <h2>Subida y alojamiento en servidor</h2>
+    <fieldset>
+        <legend>Subir multiples imagenes</legend>
+        <form action="subfich.php" enctype="multipart/form-data" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="300000">
+            Elija las imagenes que quiere subir: <input type="file" name="imgs[]" accept="image/png, image/jpg" multiple><br>
+            <input type="submit" value="Subir archivos">
+            <input type="reset" value="Borrar seleccion">
+        </form>
+    </fieldset>
+</body>
+</html>
